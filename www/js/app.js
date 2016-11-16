@@ -43,8 +43,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 	.state('tab.fiction', {
 			url: '/fiction',
-			params:{
-				categoryId:1
+			params: {
+				categoryId: 1
 			},
 			views: {
 				'tab-fiction': {
@@ -66,8 +66,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 	.state('tab.nonfiction', {
 			url: '/nonfiction',
-			params:{
-				categoryId:2
+			params: {
+				categoryId: 2
 			},
 			views: {
 				'tab-nonfiction': {
@@ -88,8 +88,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 	.state('tab.history', {
 			url: '/history',
-		params:{
-				categoryId:3
+			params: {
+				categoryId: 3
 			},
 			views: {
 				'tab-history': {
@@ -109,8 +109,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 		})
 		.state('tab.science', {
 			url: '/science',
-			params:{
-				categoryId:4
+			params: {
+				categoryId: 4
 			},
 			views: {
 				'tab-science': {

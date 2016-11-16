@@ -1,21 +1,21 @@
 <ion-view view-title="Science">
-  <ion-content>
-    <main>
-	<div class="list">
+	<ion-content>
+		<main>
+			<div class="list">
 
-	<ul>
-	<li >
-		<div ng-repeat="data in data" class="item item-thumbnail-left" ui-sref="tab.science-detail({itemid: data._id})" >
+				<ul>
+					<li>
+						<div ng-repeat="data in data" class="item item-thumbnail-left" ui-sref="tab.science-detail({itemid: data._id})">
 
-			<img src="{{data.image}}">
-			<h2> {{data.title}} </h2>
-			<h4> By: {{data.author}}</h4>
-	
-		</div>
-		</li>
-		</ul>
+							<img src="{{data.image}}">
+							<h2> {{data.title}} </h2>
+							<h4> By: {{data.author}}</h4>
 
-	</div>
-</main>
-  </ion-content>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</main>
+	</ion-content>
 </ion-view>

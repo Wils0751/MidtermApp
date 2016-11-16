@@ -65,7 +65,7 @@ angular.module('starter.controllers', [])
 
 
 	$scope.ratingsCallback = function (rating) {
-			localStorage.setItem($scope.itemid, rating);
+		localStorage.setItem($scope.itemid, rating);
 
 	};
 

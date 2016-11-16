@@ -5,22 +5,22 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{item.title}}">
-  <ion-content class="padding">
-   <div class="list card">
-     <div class="item item-avatar">
-    <img src="{{item.author_image}}">
-    <h2>{{item.title}}</h2>
-    <p> By: {{item.author}}</p>
-	   </div>
-	     <div class="item item-body">
-    <img class="full-image" src="{{item.image}}">
-		<h> Price:<p> ${{item.price}}</p>
-		<p> Release Date: {{item.release_date}}</p>
-		<p> Short Description: {{item.short_description}}</p>
-		<p> Long Description: {{item.long_description}}</p>
-		<ionic-ratings ratingsobj='ratingsObject' index='0' ng-click="pushRating();ratings='';"></ionic-ratings>
-	</div>
-</div>
-  </ion-content>
+	<ion-content class="padding">
+		<div class="list card">
+			<div class="item item-avatar">
+				<img src="{{item.author_image}}">
+				<h2>{{item.title}}</h2>
+				<p> By: {{item.author}}</p>
+			</div>
+			<div class="item item-body">
+				<img class="full-image" src="{{item.image}}">
+				<h> Price:
+					<p> ${{item.price}}</p>
+					<p> Release Date: {{item.release_date}}</p>
+					<p> Short Description: {{item.short_description}}</p>
+					<p> Long Description: {{item.long_description}}</p>
+					<ionic-ratings ratingsobj='ratingsObject' index='0' ng-click="pushRating();ratings='';"></ionic-ratings>
+			</div>
+		</div>
+	</ion-content>
 </ion-view>
-

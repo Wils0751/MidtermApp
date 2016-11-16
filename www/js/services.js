@@ -1,5 +1,5 @@
 angular.module('starter.services', [])
-.factory('CategoryService', function ItemsFactory($http) {
+	.factory('CategoryService', function ItemsFactory($http) {
 		return {
 			getAll: function () {
 				return $http({
@@ -7,20 +7,20 @@ angular.module('starter.services', [])
 					url: 'data.json'
 				});
 			}
-				
+
 		}
 
 	})
 
 .factory('ProductService', function ItemsFactory($http) {
-		return {
-			getProducts: function () {
-				return $http({
-					method: 'GET',
-					url: 'data.json'
-				});
-			}
-				
+	return {
+		getProducts: function () {
+			return $http({
+				method: 'GET',
+				url: 'data.json'
+			});
 		}
 
-	});
+	}
+
+});
