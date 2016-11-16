@@ -14,12 +14,13 @@
 			</div>
 			<div class="item item-body">
 				<img class="full-image" src="{{item.image}}">
-				<h> Price:
+				<h> Price:</h>
 					<p> ${{item.price}}</p>
 					<p> Release Date: {{item.release_date}}</p>
 					<p> Short Description: {{item.short_description}}</p>
 					<p> Long Description: {{item.long_description}}</p>
-					<ionic-ratings ratingsobj='ratingsObject' index='0' ng-click="pushRating();ratings='';"></ionic-ratings>
+					<p> Online Rating: {{item.rating}}/5 Stars</p>
+				<h> Your Rating</h><ionic-ratings ratingsobj='ratingsObject' index='0' ng-click="pushRating();ratings='';"></ionic-ratings>
 			</div>
 		</div>
 	</ion-content>
